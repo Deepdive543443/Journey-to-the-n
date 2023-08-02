@@ -60,7 +60,7 @@ void shape(ncnn::Mat& m)
     printf("Matric shape: [%d, %d, %d]\n", m.c, m.h, m.w);
 }
 
-void post_process_img(ncnn::Mat & img)
+void post_process_img(ncnn::Mat& img)
 {
     const float _mean_[3] = { -1.0f, -1.0f, -1.0f };
     const float _norm_[3] = { 127.5f, 127.5f, 127.5f };

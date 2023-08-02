@@ -16,13 +16,13 @@
 int main() 
 {
     srand(time(NULL));
-	// Load network
-	ncnn::Net progan;
-	progan.load_param("model/script_pro.ncnn.param");
-	progan.load_model("model/script_pro.ncnn.bin");
-	printf("Loaded");
+    // Load network
+    ncnn::Net progan;
+    progan.load_param("model/script_pro.ncnn.param");
+    progan.load_model("model/script_pro.ncnn.bin");
+    printf("Loaded");
 
-	// Generate noise
+    // Generate random noise
     ncnn::Mat noise = randn_mat(32, 16, 1, rand());
     noise = noise.reshape(1, 1, 512);
     shape(noise);
