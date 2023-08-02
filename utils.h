@@ -10,7 +10,7 @@
 #include <iostream>
 
 
-// Using more than 3 channels is not recommand at here
+// EdVince's implementation of randn in NCNN. Using more than 3 channels is not recommand at here
 ncnn::Mat randn_mat(int weight, int height, int channels, int seed)
 {
     cv::Mat cv_x(cv::Size(weight, height), CV_32FC(channels));
